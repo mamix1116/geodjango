@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang='ja'>
+<!-- {% load leaflet_tags %} -->
+<head>
+    <meta charset='utf-8' />
+    <title>Welcome to GeoDjango</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <h1><a href="/">Welcome to GeoDjango</a></h1>
+            <p>インフラデータチャレンジにチャレンジしよう！</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <h2><a href="">水難事故マップ</a></h2>
+                <p>データ提供：　公益財団法人　河川財団</p>
+                <p>
+                  データの内容：河川財団で収集した2005年から2016年までの1,845件の水難事故マップ公表データ。<br />
+                      事故年月、都道府県名・河川名、事故概要、緯度経度、位置情報の精度等から構成。
+                </p>
+            </div>
+            <div class="col-sm-9" style="height: 600px;">
+                <div id="map"></div>
+            </div>
+
+        </div>
+    </div><!--end container-->
+
+
+
+    <link rel="stylesheet" href="{% static 'world/css/app.css' %}">
+    <script type="text/javascript" src="{% static 'world/js/app.js' %}"></script>
+
+
+</body>
+</html>

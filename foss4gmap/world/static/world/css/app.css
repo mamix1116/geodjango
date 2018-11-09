@@ -1,0 +1,22 @@
+html, body  {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 20px;
+}
+#map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+h1 a {
+    color: #FCA205;
+    font-family: 'Lobster';
+}
+.mapboxgl-popup {
+  max-width: 400px;
+  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+.mapboxgl-popup li.borderless {
+  border: 0 none;
+}
