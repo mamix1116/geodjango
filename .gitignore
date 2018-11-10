@@ -5,4 +5,4 @@ db.sqlite3
 .DS_Store
 myenv
 test
-memo.txt
+/memo.txt
